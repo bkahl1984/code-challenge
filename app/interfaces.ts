@@ -1,9 +1,9 @@
 import { Key } from "react";
 
 export interface PRLabelsObject {
-    id?: Key | null | undefined;
-    color?: string;
-    name?: string;
+    id: Key | null | undefined;
+    color: string;
+    name: string;
 }
   
 export interface PRObject {

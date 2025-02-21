@@ -66,6 +66,7 @@ const Page: React.FC<PageProps> = ({ pullRequests }) => {
             <br />
 
             <Select
+                data-testid="select-component"
                 placeholder="Select a Label"
                 selected={selectedLabel}
                 options={filteredLabelOptions}

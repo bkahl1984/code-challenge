@@ -16,7 +16,7 @@ export const Select: React.FC<SelectProps> = ({placeholder, selected, options, o
   const [showOptions, setShowOptions] = useState(false)
 
   return (
-    <>
+    <div data-testid="select-component">
       <div className="flex">
         <div className="w-30 flex-none mr-3">Filtered by:</div>
         <div className="relative flex-none cursor-pointer" onClick={() => setShowOptions(!showOptions)}>
@@ -36,7 +36,7 @@ export const Select: React.FC<SelectProps> = ({placeholder, selected, options, o
           ))}
         </div>
       )}
-    </>
+    </div>
   );
 }
 
